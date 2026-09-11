@@ -1,0 +1,286 @@
+/* ================================
+   NAVIGATION BAR
+================================ */
+.mainnav {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    background: rgba(3, 12, 25, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* ================================
+   K LOGO
+================================ */
+.KImage {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 8px rgba(0, 153, 255, 0.35));
+    transition: 0.3s ease;
+}
+
+.KImage:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 14px rgba(0, 153, 255, 0.65));
+}
+
+/* ================================
+   NAME
+================================ */
+.mainnav h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    white-space: nowrap;
+}
+
+/* ================================
+   NAVIGATION LINKS
+================================ */
+
+.mainnav ul {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.mainnav ul li {
+    position: relative;
+    color: #b8c4d6;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 27px 0;
+    transition: color 0.3s ease;
+}
+
+/* Hover */
+.mainnav ul li:hover {
+    color: #168cff;
+}
+
+
+/* ================================
+   ACTIVE HOME LINK
+================================ */
+
+/* .mainnav ul li:first-child {
+    color: #18a8ff;
+} */
+
+
+/* Blue line under Home */
+
+/* .mainnav ul li:first-child::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 17px;
+
+    height: 2px;
+
+    background: #18a8ff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 8px rgba(24, 168, 255, 0.7);
+} */
+
+
+/* ================================
+   HOVER UNDERLINE
+================================ */
+
+.mainnav ul li:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 17px;
+    width: 0;
+    height: 2px;
+    background: #18a8ff;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.mainnav ul li:hover::after {
+    width: 100%;
+}
+
+
+/* ================================
+   DOWNLOAD CV BUTTON
+================================ */
+
+.mainnav button {
+    height: 38px;
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #168cff;
+    border-radius: 22px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+
+/* Button hover */
+
+.mainnav button:hover {
+    background: #168cff;
+    color: #ffffff;
+    box-shadow:
+        0 0 12px rgba(22, 140, 255, 0.45),
+        0 0 25px rgba(22, 140, 255, 0.15);
+
+    transform: translateY(-1px);
+}
+
+/* Button click */
+.mainnav button:active {
+    transform: translateY(0);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1100px) {
+
+    .mainnav {
+        padding: 0 4%;
+    }
+
+    .mainnav ul {
+        gap: 22px;
+    }
+
+    .mainnav ul li {
+        font-size: 13px;
+    }
+
+    .mainnav h2 {
+        font-size: 16px;
+    }
+
+    .mainnav button {
+        padding: 0 15px;
+    }
+}
+
+
+/* ================================
+   SMALL TABLET
+================================ */
+
+@media (max-width: 850px) {
+
+    .mainnav {
+        height: 65px;
+    }
+
+    .KImage {
+        width: 34px;
+        height: 34px;
+    }
+
+    .mainnav h2 {
+        font-size: 15px;
+    }
+
+    .mainnav ul {
+        gap: 15px;
+    }
+
+    .mainnav ul li {
+        font-size: 12px;
+    }
+
+    .mainnav button {
+        height: 34px;
+        padding: 0 12px;
+        font-size: 12px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .mainnav {
+        height: 65px;
+
+        padding: 0 20px;
+    }
+
+    .mainnav h2 {
+        font-size: 15px;
+    }
+
+    /* Hide desktop navigation */
+    .mainnav ul {
+        display: none;
+    }
+
+    /* Keep button */
+    .mainnav button {
+        margin-left: auto;
+    }
+}
+
+
+/* ================================
+   VERY SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+    .mainnav {
+        padding: 0 14px;
+    }
+
+    .KImage {
+        width: 32px;
+        height: 32px;
+
+        margin-right: 7px;
+    }
+
+    .mainnav h2 {
+        font-size: 13px;
+    }
+
+    .mainnav button {
+        padding: 0 11px;
+
+        font-size: 11px;
+    }
+}
