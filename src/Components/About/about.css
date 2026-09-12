@@ -1,0 +1,385 @@
+/* ========================================
+   ABOUT SECTION
+======================================== */
+.aboutmain {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 8% 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 30%,
+            rgba(0, 119, 255, 0.08),
+            transparent 32%),
+        radial-gradient(circle at 80% 70%,
+            rgba(0, 180, 255, 0.07),
+            transparent 30%),
+        linear-gradient(135deg,
+            #020914 0%,
+            #041326 55%,
+            #020914 100%);
+}
+
+/* ========================================
+   BACKGROUND GLOW
+======================================== */
+.aboutmain::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -180px;
+    top: 15%;
+    background: rgba(0, 132, 255, 0.08);
+    filter: blur(120px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* ========================================
+   SECOND BACKGROUND GLOW
+======================================== */
+.aboutmain::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: -150px;
+    bottom: 5%;
+    background: rgba(0, 174, 255, 0.07);
+    filter: blur(120px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* ========================================
+   ABOUT ICON
+======================================== */
+.aboutmain>svg {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 15px;
+    color: #18a8ff;
+    padding: 14px;
+    border-radius: 50%;
+    background: rgba(24, 168, 255, 0.07);
+    border: 1px solid rgba(24, 168, 255, 0.18);
+    box-shadow:
+        0 0 25px rgba(24, 168, 255, 0.10);
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================================
+   ABOUT TITLE
+======================================== */
+.aboutmain>h2 {
+    margin: 0 0 25px;
+    font-size: clamp(36px, 4vw, 52px);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    text-align: center;
+    background: linear-gradient(90deg,
+            #ffffff 0%,
+            #ffffff 45%,
+            #159cff 75%,
+            #00c6ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================================
+   TITLE BLUE LINE
+======================================== */
+.aboutmain>h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    margin: 14px auto 0;
+    border-radius: 10px;
+    background: linear-gradient(90deg,
+            #087cff,
+            #00c6ff);
+    box-shadow:
+        0 0 12px rgba(0, 160, 255, 0.35);
+}
+
+/* ========================================
+   ABOUT DESCRIPTION
+======================================== */
+.aboutmain>p {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #aebdce;
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================================
+   HIGHLIGHT WORDS EFFECT
+   Optional if you later use <span>
+======================================== */
+.aboutmain>p span {
+    color: #18a8ff;
+    font-weight: 500;
+}
+
+/* ========================================
+   INFORMATION CONTAINER
+======================================== */
+.abouticon {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================================
+   INFORMATION CARDS
+======================================== */
+.aboutlocation,
+.aboutstudy,
+.aboutwork {
+    min-height: 145px;
+    padding: 28px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 18px;
+    background:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.015));
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+/* ========================================
+   CARD ICONS
+======================================== */
+.aboutlocation svg,
+.aboutstudy svg,
+.aboutwork svg {
+    width: 24px;
+    height: 24px;
+    color: #18a8ff;
+    margin-bottom: 15px;
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+/* ========================================
+   CARD TEXT
+======================================== */
+.aboutlocation p,
+.aboutstudy p,
+.aboutwork p {
+    margin: 0;
+    color: #d2dce8;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* ========================================
+   CARD HOVER
+======================================== */
+.aboutlocation:hover,
+.aboutstudy:hover,
+.aboutwork:hover {
+    transform: translateY(-7px);
+    border-color: rgba(24, 168, 255, 0.40);
+    background:
+        linear-gradient(145deg,
+            rgba(24, 168, 255, 0.08),
+            rgba(255, 255, 255, 0.02));
+    box-shadow:
+        0 12px 35px rgba(0, 119, 255, 0.12);
+}
+
+/* ========================================
+   ICON HOVER
+======================================== */
+.aboutlocation:hover svg,
+.aboutstudy:hover svg,
+.aboutwork:hover svg {
+    color: #00c6ff;
+    transform: translateY(-3px) scale(1.08);
+}
+
+/* ========================================
+   TABLET
+======================================== */
+@media (max-width: 900px) {
+
+    .aboutmain {
+        padding: 90px 6% 70px;
+    }
+
+    .aboutmain>p {
+        max-width: 750px;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .abouticon {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .aboutlocation,
+    .aboutstudy,
+    .aboutwork {
+        min-height: 140px;
+        padding: 22px 15px;
+    }
+}
+
+/* ========================================
+   SMALL TABLET
+======================================== */
+@media (max-width: 700px) {
+    .aboutmain {
+        padding: 85px 25px 65px;
+    }
+
+    .aboutmain>h2 {
+        font-size: 38px;
+    }
+
+    .aboutmain>p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .abouticon {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .aboutlocation,
+    .aboutstudy,
+    .aboutwork {
+        min-height: 115px;
+        padding: 20px;
+    }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+@media (max-width: 500px) {
+    .aboutmain {
+        min-height: auto;
+        padding: 85px 20px 55px;
+    }
+
+    /* ABOUT ICON */
+    .aboutmain>svg {
+        width: 32px;
+        height: 32px;
+        padding: 11px;
+        margin-bottom: 12px;
+    }
+
+    /* TITLE */
+    .aboutmain>h2 {
+        font-size: 34px;
+        letter-spacing: -1px;
+        margin-bottom: 22px;
+    }
+
+    /* DESCRIPTION */
+    .aboutmain>p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+
+    /* CARDS */
+    .abouticon {
+        margin-top: 32px;
+        gap: 12px;
+    }
+
+
+    .aboutlocation,
+    .aboutstudy,
+    .aboutwork {
+        min-height: 105px;
+        border-radius: 15px;
+        padding: 18px;
+    }
+
+    .aboutlocation svg,
+    .aboutstudy svg,
+    .aboutwork svg {
+        width: 21px;
+        height: 21px;
+
+        margin-bottom: 10px;
+    }
+
+    .aboutlocation p,
+    .aboutstudy p,
+    .aboutwork p {
+        font-size: 13px;
+    }
+}
+
+
+/* ========================================
+   VERY SMALL MOBILE
+======================================== */
+
+@media (max-width: 380px) {
+
+    .aboutmain {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .aboutmain>h2 {
+        font-size: 30px;
+    }
+
+    .aboutmain>p {
+        font-size: 13px;
+    }
+
+    .aboutlocation,
+    .aboutstudy,
+    .aboutwork {
+        min-height: 100px;
+    }
+}
