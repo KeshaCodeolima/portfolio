@@ -5,6 +5,7 @@ import About from './Components/About/about';
 import Skill from './Components/Skill/skill';
 import Project from './Components/Project/project';
 import Experience from './Components/Experience/experience';
+import Service from './Components/Service/service';
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
 
       <section id='experience'>
         <Experience />
+      </section>
+
+      <section id='service'>
+        <Service/>
       </section>
     </>
   );
