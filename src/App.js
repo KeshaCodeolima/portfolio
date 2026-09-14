@@ -3,6 +3,7 @@ import Navigation from './Components/Navigation/navigation';
 import Home from './Components/Home/home';
 import About from './Components/About/about';
 import Skill from './Components/Skill/skill';
+import Project from './Components/Project/project';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
 
       <section id='skills'>
         <Skill />
+      </section>
+
+      <section id='projects'>
+        <Project />
       </section>
     </>
   );
