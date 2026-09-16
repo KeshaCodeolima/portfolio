@@ -1,0 +1,420 @@
+/* =========================================
+   CONTACT PAGE
+========================================= */
+.maincontact {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 100px 7% 90px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%,
+            rgba(0, 140, 255, 0.12),
+            transparent 35%),
+        radial-gradient(circle at 85% 75%,
+            rgba(0, 198, 255, 0.10),
+            transparent 35%),
+        linear-gradient(135deg,
+            #020914 0%,
+            #041326 50%,
+            #020914 100%);
+}
+
+/* =========================================
+   CONTACT HEADING
+========================================= */
+.maincontact1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.maincontact1 svg {
+    width: 27px;
+    height: 27px;
+    padding: 12px;
+    color: #18a8ff;
+    background: rgba(24, 168, 255, 0.08);
+    border: 1px solid rgba(24, 168, 255, 0.25);
+    border-radius: 50%;
+    box-shadow:
+        0 0 20px rgba(24, 168, 255, 0.18);
+    transition: 0.3s ease;
+}
+
+.maincontact1 svg:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 30px rgba(24, 168, 255, 0.35);
+}
+
+.maincontact1 h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    background: linear-gradient(90deg,
+            #ffffff 0%,
+            #ffffff 45%,
+            #159cff 75%,
+            #00c6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+.maincontact2 {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.maincontact2 h3 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.maincontact2 p {
+    margin: 0;
+    color: #aeb9c7;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   MAIN CONTACT CONTENT
+========================================= */
+.maincontact3,
+.maincontact4 {
+    box-sizing: border-box;
+}
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+.maincontact3 {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto 35px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.015));
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+.maincontact3 input,
+.maincontact3 textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    outline: none;
+    background: rgba(2, 29, 69, 0.221);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.maincontact3 input {
+    height: 50px;
+}
+
+.maincontact3 textarea {
+    min-height: 160px;
+    resize: vertical;
+    grid-column: 1 / 3;
+}
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+.maincontact3 input::placeholder,
+.maincontact3 textarea::placeholder {
+    color: #718096;
+    opacity: 1;
+}
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+.maincontact3 input:focus,
+.maincontact3 textarea:focus {
+    border-color: rgba(24, 168, 255, 0.65);
+    background: rgba(2, 13, 28, 0.377);
+    box-shadow:
+        0 0 0 3px rgba(24, 168, 255, 0.08),
+        0 0 18px rgba(24, 168, 255, 0.08);
+}
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+.maincontact3 button {
+    grid-column: 1 / 3;
+    justify-self: center;
+    min-width: 170px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(90deg,
+            #087ed9,
+            #18a8ff,
+            #00c6ff);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow:
+        0 8px 20px rgba(0, 156, 255, 0.20);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        filter 0.3s ease;
+}
+
+.maincontact3 button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.08);
+    box-shadow:
+        0 12px 28px rgba(0, 156, 255, 0.35);
+}
+
+.maincontact3 button:active {
+    transform: translateY(0);
+}
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+.maincontact4 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* =========================================
+   CONTACT CARDS
+========================================= */
+.contact41,
+.contact42 {
+    min-height: 90px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 16px;
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, 0.05),
+            rgba(255, 255, 255, 0.015));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact41:hover,
+.contact42:hover {
+    transform: translateY(-5px);
+    border-color: rgba(24, 168, 255, 0.30);
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.25),
+        0 0 20px rgba(24, 168, 255, 0.08);
+}
+
+/* =========================================
+   CONTACT ICONS
+========================================= */
+.contact41 svg,
+.contact42 svg {
+    width: 22px;
+    height: 22px;
+    color: #18a8ff;
+    filter:
+        drop-shadow(0 0 8px rgba(24, 168, 255, 0.30));
+}
+
+/* =========================================
+   CONTACT TEXT
+========================================= */
+.contact41 p,
+.contact42 p {
+    margin: 0;
+    color: #b8c2cf;
+    font-size: 13px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+/* =========================================
+   EMAIL HOVER
+========================================= */
+.contact41:hover p,
+.contact42:hover p {
+    color: #18a8ff;
+    transition: 0.3s ease;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+@media (max-width: 900px) {
+    .maincontact {
+        padding: 90px 6% 80px;
+    }
+
+    .maincontact4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact41 {
+        grid-column: 1 / 3;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+@media (max-width: 650px) {
+    .maincontact {
+        padding: 80px 5% 65px;
+    }
+
+    .maincontact1 {
+        margin-bottom: 22px;
+    }
+
+    .maincontact1 h2 {
+        font-size: 28px;
+    }
+
+    .maincontact1 svg {
+        width: 23px;
+        height: 23px;
+        padding: 10px;
+    }
+
+    .maincontact2 {
+        margin-bottom: 35px;
+    }
+
+    .maincontact2 h3 {
+        font-size: 22px;
+    }
+
+    .maincontact2 p {
+        font-size: 14px;
+    }
+
+    .maincontact3 {
+        padding: 24px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        border-radius: 17px;
+    }
+
+    .maincontact3 textarea {
+        grid-column: auto;
+    }
+
+    .maincontact3 button {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .maincontact4 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact41 {
+        grid-column: auto;
+    }
+
+    .contact41,
+    .contact42 {
+        min-height: 85px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+@media (max-width: 400px) {
+    .maincontact {
+        padding: 70px 4% 55px;
+    }
+
+    .maincontact1 {
+        gap: 10px;
+    }
+
+    .maincontact1 h2 {
+        font-size: 25px;
+    }
+
+    .maincontact1 svg {
+        width: 20px;
+        height: 20px;
+        padding: 9px;
+    }
+
+    .maincontact3 {
+        padding: 20px;
+    }
+
+    .maincontact3 input,
+    .maincontact3 textarea {
+        font-size: 13px;
+    }
+
+    .maincontact3 textarea {
+        min-height: 140px;
+    }
+
+    .contact41 p,
+    .contact42 p {
+        font-size: 12.5px;
+    }
+}

@@ -6,6 +6,7 @@ import Skill from './Components/Skill/skill';
 import Project from './Components/Project/project';
 import Experience from './Components/Experience/experience';
 import Service from './Components/Service/service';
+import Contact from './Components/Contact/contact';
 
 function App() {
   return (
@@ -33,7 +34,11 @@ function App() {
       </section>
 
       <section id='service'>
-        <Service/>
+        <Service />
+      </section>
+
+      <section id='contact'>
+        <Contact />
       </section>
     </>
   );
