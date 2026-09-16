@@ -1,0 +1,389 @@
+/* =========================================
+   SERVICE PAGE
+========================================= */
+.mainservice {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 100px 7% 90px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%,
+            rgba(0, 140, 255, 0.12),
+            transparent 35%),
+        radial-gradient(circle at 85% 75%,
+            rgba(0, 198, 255, 0.10),
+            transparent 35%),
+        linear-gradient(135deg,
+            #020914 0%,
+            #041326 50%,
+            #020914 100%);
+}
+
+/* =========================================
+   SERVICE HEADING
+========================================= */
+.mainservice1 {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+/* Heading Icon */
+.mainservice1 svg {
+    width: 27px;
+    height: 27px;
+    padding: 12px;
+    color: #18a8ff;
+    background: rgba(24, 168, 255, 0.08);
+    border: 1px solid rgba(24, 168, 255, 0.25);
+    border-radius: 50%;
+    box-shadow:
+        0 0 20px rgba(24, 168, 255, 0.18);
+    transition: 0.3s ease;
+}
+
+.mainservice1 svg:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 30px rgba(24, 168, 255, 0.35);
+}
+
+/* Heading */
+.mainservice1 h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    background: linear-gradient(90deg,
+            #ffffff 0%,
+            #ffffff 45%,
+            #159cff 75%,
+            #00c6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================
+   SERVICES GRID
+========================================= */
+.mainservice2 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* =========================================
+   SERVICE CARDS
+========================================= */
+.service1,
+.service2,
+.service3,
+.service4,
+.service5,
+.service6 {
+    min-height: 230px;
+    box-sizing: border-box;
+    padding: 30px 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 20px;
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.015));
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.20);
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+/* =========================================
+   SERVICE CARD HOVER
+========================================= */
+.service1:hover,
+.service2:hover,
+.service3:hover,
+.service4:hover,
+.service5:hover,
+.service6:hover {
+    transform: translateY(-8px);
+    border-color: rgba(24, 168, 255, 0.35);
+    background:
+        linear-gradient(135deg,
+            rgba(24, 168, 255, 0.08),
+            rgba(255, 255, 255, 0.025));
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.30),
+        0 0 30px rgba(24, 168, 255, 0.10);
+}
+
+/* =========================================
+   SERVICE ICON
+========================================= */
+.service1 img,
+.service2 img,
+.service3 img,
+.service4 img,
+.service5 img,
+.service6 img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    padding: 13px;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    background:
+        rgba(24, 168, 255, 0.08);
+    border: 1px solid rgba(24, 168, 255, 0.18);
+    box-shadow:
+        0 0 18px rgba(24, 168, 255, 0.08);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+/* Icon Hover */
+.service1:hover img,
+.service2:hover img,
+.service3:hover img,
+.service4:hover img,
+.service5:hover img,
+.service6:hover img {
+    transform: translateY(-4px) scale(1.05);
+    background:
+        rgba(24, 168, 255, 0.13);
+    box-shadow:
+        0 0 25px rgba(24, 168, 255, 0.20);
+}
+
+/* =========================================
+   SERVICE TEXT
+========================================= */
+.service1 p,
+.service2 p,
+.service3 p,
+.service4 p,
+.service5 p,
+.service6 p {
+    margin: 0;
+    color: #aeb9c7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+/* =========================================
+   SERVICE TITLE
+========================================= */
+.service1 p span,
+.service2 p span,
+.service3 p span,
+.service4 p span,
+.service5 p span,
+.service6 p span {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+/* =========================================
+   TITLE HOVER
+========================================= */
+.service1:hover p span,
+.service2:hover p span,
+.service3:hover p span,
+.service4:hover p span,
+.service5:hover p span,
+.service6:hover p span {
+    color: #18a8ff;
+}
+
+/* =========================================
+   RESPONSIVE - 1050px
+========================================= */
+@media (max-width: 1050px) {
+    .mainservice {
+        padding: 90px 6% 80px;
+    }
+
+    .mainservice2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .service1,
+    .service2,
+    .service3,
+    .service4,
+    .service5,
+    .service6 {
+        min-height: 225px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - 750px
+========================================= */
+@media (max-width: 750px) {
+
+    .mainservice {
+        padding: 80px 5% 70px;
+    }
+
+    .mainservice1 {
+        margin-bottom: 45px;
+    }
+
+    .mainservice1 h2 {
+        font-size: 28px;
+    }
+
+    .mainservice1 svg {
+        width: 23px;
+        height: 23px;
+        padding: 10px;
+    }
+
+    .mainservice2 {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+        gap: 20px;
+    }
+
+    .service1,
+    .service2,
+    .service3,
+    .service4,
+    .service5,
+    .service6 {
+        min-height: 215px;
+        padding: 28px 25px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - 500px
+========================================= */
+@media (max-width: 500px) {
+
+    .mainservice {
+        padding: 70px 5% 60px;
+    }
+
+    .mainservice1 {
+        gap: 10px;
+        margin-bottom: 38px;
+    }
+
+    .mainservice1 h2 {
+        font-size: 25px;
+    }
+
+    .mainservice1 svg {
+        width: 20px;
+        height: 20px;
+        padding: 9px;
+    }
+
+    .service1,
+    .service2,
+    .service3,
+    .service4,
+    .service5,
+    .service6 {
+        min-height: 205px;
+        padding: 25px 20px;
+        border-radius: 17px;
+    }
+
+    .service1 img,
+    .service2 img,
+    .service3 img,
+    .service4 img,
+    .service5 img,
+    .service6 img {
+        width: 58px;
+        height: 58px;
+        padding: 11px;
+        margin-bottom: 18px;
+    }
+
+    .service1 p,
+    .service2 p,
+    .service3 p,
+    .service4 p,
+    .service5 p,
+    .service6 p {
+        font-size: 13.5px;
+        line-height: 1.7;
+    }
+
+    .service1 p span,
+    .service2 p span,
+    .service3 p span,
+    .service4 p span,
+    .service5 p span,
+    .service6 p span {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - 380px
+========================================= */
+@media (max-width: 380px) {
+
+    .mainservice {
+        padding: 65px 4% 50px;
+    }
+
+    .mainservice2 {
+        gap: 17px;
+    }
+
+    .service1,
+    .service2,
+    .service3,
+    .service4,
+    .service5,
+    .service6 {
+        padding: 23px 17px;
+        min-height: 200px;
+    }
+
+    .service1 p span,
+    .service2 p span,
+    .service3 p span,
+    .service4 p span,
+    .service5 p span,
+    .service6 p span {
+        font-size: 16px;
+    }
+}

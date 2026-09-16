@@ -1,0 +1,396 @@
+/* =========================================
+   EXPERIENCE PAGE
+========================================= */
+.mainexperience {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 7% 90px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%,
+            rgba(0, 140, 255, 0.12),
+            transparent 35%),
+        radial-gradient(circle at 85% 80%,
+            rgba(0, 198, 255, 0.10),
+            transparent 35%),
+        linear-gradient(135deg,
+            #020914 0%,
+            #041326 50%,
+            #020914 100%);
+}
+
+/* =========================================
+   EXPERIENCE HEADING
+========================================= */
+.mainexpe1 {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.mainexpe1 svg {
+    width: 27px;
+    height: 27px;
+    padding: 12px;
+    color: #18a8ff;
+    background: rgba(24, 168, 255, 0.08);
+    border: 1px solid rgba(24, 168, 255, 0.25);
+    border-radius: 50%;
+    box-shadow:
+        0 0 20px rgba(24, 168, 255, 0.18);
+    transition: 0.3s ease;
+}
+
+.mainexpe1 svg:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 30px rgba(24, 168, 255, 0.35);
+}
+
+.mainexpe1 h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    background: linear-gradient(90deg,
+            #ffffff 0%,
+            #ffffff 45%,
+            #159cff 75%,
+            #00c6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================
+   EXPERIENCE CONTAINER
+========================================= */
+.mainexpe2 {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* =========================================
+   VERTICAL TIMELINE
+========================================= */
+.mainexpe2::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 190px;
+    width: 2px;
+    background: linear-gradient(to bottom,
+            transparent,
+            #159cff 10%,
+            #00c6ff 50%,
+            #159cff 90%,
+            transparent);
+    box-shadow:
+        0 0 12px rgba(21, 156, 255, 0.35);
+}
+
+/* =========================================
+   EXPERIENCE CARD
+========================================= */
+.expe1,
+.expe2,
+.expe3,
+.expe4,
+.expe5 {
+    width: 100%;
+    min-height: 120px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    column-gap: 60px;
+    position: relative;
+    padding: 25px 30px;
+    border-radius: 18px;
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018));
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.20);
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* =========================================
+   HOVER
+========================================= */
+.expe1:hover,
+.expe2:hover,
+.expe3:hover,
+.expe4:hover,
+.expe5:hover {
+    transform: translateX(6px);
+    border-color: rgba(24, 168, 255, 0.35);
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.30),
+        0 0 25px rgba(24, 168, 255, 0.10);
+}
+
+/* =========================================
+   YEAR
+========================================= */
+.expe1>span,
+.expe2>span,
+.expe3>span,
+.expe4>span,
+.expe5>span {
+    align-self: center;
+    color: #18a8ff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+/* =========================================
+   TIMELINE DOT
+========================================= */
+.expe1::before,
+.expe2::before,
+.expe3::before,
+.expe4::before,
+.expe5::before {
+    content: "";
+    position: absolute;
+    left: 183px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #18a8ff;
+    border: 3px solid #041326;
+    box-shadow:
+        0 0 0 3px rgba(24, 168, 255, 0.18),
+        0 0 18px rgba(24, 168, 255, 0.65);
+    z-index: 2;
+}
+
+/* =========================================
+   EXPERIENCE DESCRIPTION
+========================================= */
+.expe1 p,
+.expe2 p,
+.expe3 p,
+.expe4 p,
+.expe5 p {
+    margin: 0;
+    color: #b7c1ce;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* =========================================
+   JOB TITLE
+========================================= */
+.expe1 p>span,
+.expe2 p>span,
+.expe3 p>span,
+.expe4 p>span,
+.expe5 p>span {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* =========================================
+   JOB TITLE HOVER
+========================================= */
+.expe1:hover p>span,
+.expe2:hover p>span,
+.expe3:hover p>span,
+.expe4:hover p>span,
+.expe5:hover p>span {
+    color: #18a8ff;
+    transition: 0.3s ease;
+}
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+@media (max-width: 900px) {
+
+    .mainexperience {
+        padding: 90px 5% 70px;
+    }
+
+    .mainexpe2 {
+        max-width: 750px;
+    }
+
+    .mainexpe2::before {
+        left: 155px;
+    }
+
+    .expe1,
+    .expe2,
+    .expe3,
+    .expe4,
+    .expe5 {
+        grid-template-columns: 125px 1fr;
+        column-gap: 55px;
+        padding: 23px;
+    }
+
+    .expe1::before,
+    .expe2::before,
+    .expe3::before,
+    .expe4::before,
+    .expe5::before {
+        left: 148px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+@media (max-width: 700px) {
+
+    .mainexperience {
+        padding: 80px 5% 60px;
+    }
+
+    .mainexpe1 {
+        margin-bottom: 45px;
+    }
+
+    .mainexpe1 h2 {
+        font-size: 28px;
+    }
+
+    .mainexpe1 svg {
+        width: 22px;
+        height: 22px;
+        padding: 10px;
+    }
+
+    .mainexpe2 {
+        gap: 22px;
+    }
+
+    .mainexpe2::before {
+        left: 17px;
+    }
+
+    .expe1,
+    .expe2,
+    .expe3,
+    .expe4,
+    .expe5 {
+        display: block;
+        padding: 25px 22px 25px 45px;
+        min-height: auto;
+    }
+
+    .expe1::before,
+    .expe2::before,
+    .expe3::before,
+    .expe4::before,
+    .expe5::before {
+        left: 17px;
+        top: 28px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .expe1>span,
+    .expe2>span,
+    .expe3>span,
+    .expe4>span,
+    .expe5>span {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .expe1 p,
+    .expe2 p,
+    .expe3 p,
+    .expe4 p,
+    .expe5 p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .expe1 p>span,
+    .expe2 p>span,
+    .expe3 p>span,
+    .expe4 p>span,
+    .expe5 p>span {
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+@media (max-width: 450px) {
+
+    .mainexperience {
+        padding: 70px 4% 50px;
+    }
+
+    .mainexpe1 {
+        gap: 10px;
+    }
+
+    .mainexpe1 h2 {
+        font-size: 25px;
+    }
+
+    .mainexpe1 svg {
+        width: 20px;
+        height: 20px;
+        padding: 9px;
+    }
+
+    .expe1,
+    .expe2,
+    .expe3,
+    .expe4,
+    .expe5 {
+        padding: 22px 18px 22px 40px;
+        border-radius: 15px;
+    }
+
+    .mainexpe2::before {
+        left: 14px;
+    }
+
+    .expe1::before,
+    .expe2::before,
+    .expe3::before,
+    .expe4::before,
+    .expe5::before {
+        left: 14px;
+    }
+}
